@@ -2,7 +2,7 @@
 #' @param l the list the check
 #' @param item_name the item name in the list to check
 test_list_item_not_null <- function(l, item_name) {
-browser()
+
   x <- sapply(l, function(list_item) !is.null(list_item[[item_name]]),
               simplify = TRUE, USE.NAMES = FALSE)
   
