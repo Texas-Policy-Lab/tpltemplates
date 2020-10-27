@@ -74,10 +74,10 @@
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.6.1",
+      "Version": "1.7.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "84b0ee361e2f78d6b7d670db9471c0c5"
+      "Hash": "1ec84e070b88b37ed169f19def40d47c"
     },
     "later": {
       "Package": "later",
@@ -116,10 +116,10 @@
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "0.4.5",
+      "Version": "0.4.8",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "1cc1b38e4db40ea6eb19ab8080bbed3b"
+      "Hash": "843a6af51414bce7f8a8e372f11d6cd0"
     },
     "shiny": {
       "Package": "shiny",
