@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: var(--main-fonts);
+  font-size: 16px;
+  line-height: 108%;
+  font-weight: normal;
+  color: var(--main-tpl-blue);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.content-wrapper {
+  background-color: var(--white);
+  font-weight: normal;
+  padding: 20px;
+  max-height: 915px;
+  min-height: 800px!important;
+}
+
+h1, h2, h4, h5, h6, span {
+  font-family: var(--main-fonts);
+}
+
+.content {
+  min-height: 250px;
+  padding: 15px;
+  padding-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.box.box-solid.box-primary>.box-header {
+  color: #fff;
+  background: var(--main-tpl-blue);
+  background-color: var(--main-tpl-blue);
+}
+
+.box.box-primary,
+.box-body,
+.box {
+  border-color: var(--main-tpl-blue);
+}

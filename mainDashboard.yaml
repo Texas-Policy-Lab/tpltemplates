@@ -1,0 +1,17 @@
+css_pth: "www/css"
+js_pth: "www/js"
+favicon_pth: "images/favicon.png"
+
+tpl_url: "https://www.texaspolicylab.org/"
+
+ui:
+  title: ""
+  tabs:
+    tab1: 
+      menu_title: ""
+      icon: ""
+      page_title: ""
+    tab2:
+      menu_title: ""
+      icon: ""
+      page_title: ""
