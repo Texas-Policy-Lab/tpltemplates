@@ -6,3 +6,4 @@ Authors@R: person("Joli", "Holmes", email = "jh111@rice.edu",
 Description: Generates templates (dashboards and reports) that use TPL styling.
 Depends: R (>= 3.6.0)
 LazyData: true
+RoxygenNote: 7.1.1
