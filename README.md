@@ -1,2 +1,2 @@
-# tpldashboardr
-Create a template dashboard that is TPL-themed
+# tpltemplates
+Creates templates that are TPL-themed.
