@@ -42,3 +42,5 @@ vignettes/*.pdf
 renv/library
 renv/settings.dcf
 renv/.gitignore
+
+*.html
