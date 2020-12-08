@@ -4,7 +4,11 @@
 \alias{create_report}
 \title{Create report}
 \usage{
-create_report(pth, template_dir = "report_template")
+create_report(
+  pth,
+  template_dir = "report_template",
+  dirs = list.dirs(c("R", "www"))
+)
 }
 \arguments{
 \item{pth}{string. The path root directory of the application.}

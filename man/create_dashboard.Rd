@@ -4,7 +4,11 @@
 \alias{create_dashboard}
 \title{Create dashboard}
 \usage{
-create_dashboard(pth, template_dir = "app_template")
+create_dashboard(
+  pth,
+  template_dir = "app_template",
+  dirs = list.dirs(c("R", "www"))
+)
 }
 \arguments{
 \item{pth}{string. The path root directory of the application.}
