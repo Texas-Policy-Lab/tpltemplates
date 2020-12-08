@@ -22,7 +22,7 @@ copy_template <- function(pth,
   fls <- fls[grepl(ignore, fls) == FALSE]
 
   lapply(fls, function(fl, pth) {
-
+    
            file.copy(from = fl,
                      to = file.path(pth, gsub(template_dir, ".", fl)))
     }, pth = pth)
