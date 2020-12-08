@@ -1,5 +1,7 @@
 ---
-output: html_document
+output: 
+  html_document:
+    css: ['./www/css/_normalize.css', './www/css/main.css', './www/css/styles.css', './www/css/tabs.css', './www/css/footer.css']
 ---
 
 ```{r setup, include=FALSE}
@@ -12,11 +14,7 @@ library(htmltools)
 
 <html>
   <head>
-     <link rel="stylesheet" href="../www/css/_normalize.css">
-     <link rel="stylesheet" href="../www/css/main.css">
-     <link rel="stylesheet" href="../www/css/styles.css">
-     <link rel="stylesheet" href="./css/footer.css">
-     <link rel="shortcut icon" type = "image/png" href="../www/images/favicon.png">
+     <link rel="shortcut icon" type = "image/png" href="./www/images/favicon.png">
   </head>
   <body>
     <header>
@@ -26,7 +24,7 @@ library(htmltools)
   </body>
 </html>
 
-# Report Title
+# Report Title {.tabset}
 
 ## Header 2
 
