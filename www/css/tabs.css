@@ -2,7 +2,8 @@
 .nav-tabs-custom .nav-tabs li.active,
 .nav-tabs li.active a,
 .nav-tabs li.active a:focus {
-  border-top-color: var(--main-tpl-red);
+  border-top: 2px solid var(--main-tpl-red);
+  border-radius: 0;
   font-weight: bold;
 }
 
@@ -46,4 +47,8 @@
 .nav {
   border-bottom: 1px solid var(--grey-20-darker);
   margin-left: 15px;
+}
+
+.hasAnchor:hover a.anchor-section {
+  visibility: hidden;
 }
