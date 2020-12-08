@@ -1,12 +1,25 @@
+#' @title Create directory structure
+create_dir_str <- function(pth, dirs) {
+
+  pths <- file.path(pth, dirs)
+
+  lapply(pths, function(p) {
+    if(!dir.exists(p)) {
+      dir.create(p)
+    }
+  })
+}
+
+#' @title List files
 list_files <- function(template_dir,
                        dirs, 
                        ignore = "R/templates.R") {
-  
+
   fls <- c(list.files(template_dir, full.names = TRUE, recursive = TRUE),
            list.files(dirs, full.names = TRUE, recursive = TRUE))
-  
+
   fls <- fls[grepl(ignore, fls) == FALSE]
-  
+
 }
 
 #' @title Create dashboard
@@ -17,8 +30,9 @@ create_dashboard <- function(pth,
                              template_dir = "app_template",
                              dirs = list.dirs(c("R", "www"))) {
 
-  lapply(dirs, function(dir, pth) dir.create(file.path(pth, dir)), pth = pth)
-  
+  create_dir_str(pth = pth,
+                 dirs = dirs)
+
   fls <- list_files(template_dir = template_dir,
                     dirs = dirs)
 
@@ -41,7 +55,8 @@ create_report <- function(pth,
 
   dirs_special <- c("R", "css", "js", "images", "svg")
 
-  lapply(dirs_special, function(dir, pth) dir.create(file.path(pth, dir)), pth = pth)
+  create_dir_str(pth = pth,
+                 dirs = dirs_special)
 
   fls <- list_files(template_dir = template_dir,
                     dirs = dirs)
