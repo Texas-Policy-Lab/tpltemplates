@@ -1,10 +1,12 @@
 footer {
-  position: relative;
-  border-top: 1px solid rgba(151,151,151,.51);
-  display: block;
-  background-color: var(--white);
-  max-height: 100px;
-  bottom: 0;
+    position: fixed;
+    border-top: 1px solid rgba(151,151,151,.51);
+    display: block;
+    background-color: var(--white);
+    max-height: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer .star {
