@@ -4,7 +4,6 @@
 .nav-tabs li.active a:focus {
   border-top: 2px solid var(--main-tpl-red);
   border-radius: 0;
-  font-weight: bold;
 }
 
 /* Styling for selected tabs */
@@ -22,6 +21,8 @@
   background-color: var(--white);
   color: var(--grey-60-darker);
   font-family: var(--main-fonts);
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .nav-pills > li.active > a,
