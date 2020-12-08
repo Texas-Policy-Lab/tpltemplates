@@ -1,10 +1,9 @@
 ---
 output: 
   html_document:
-    css: ['./css/_normalize.css', './css/main.css', './css/styles.css', './css/tabs.css', './css/footer.css']
+    css: ['./css/_normalize.css', './css/_styles.css', './css/main.css', './css/tabs.css', './css/footer.css', './css/report_styles.css']
     includes:
       in_header: header.html
-      after_body: footer.html
 ---
 
 ```{r setup, include=FALSE}
@@ -25,7 +24,7 @@ library(htmltools)
 
 ## Header 2 Tab 2 
 
-#
+</div>
 
 ```{r}
 source("./R/footer.R", local = knitr::knit_global())
