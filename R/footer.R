@@ -2,7 +2,7 @@
 #' @description Creates the TPL footer to add to dashboards and reports
 #' @param version the version of the dashboard
 #' @export
-footer <- function() {
+footer <- function(TPL_URL = "https://www.texaspolicylab.org/") {
   
   htmltools::tags$footer(
     htmltools::tags$div(class = "star"
