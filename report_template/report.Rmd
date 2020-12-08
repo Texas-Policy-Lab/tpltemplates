@@ -2,6 +2,9 @@
 output: 
   html_document:
     css: ['./www/css/_normalize.css', './www/css/main.css', './www/css/styles.css', './www/css/tabs.css', './www/css/footer.css']
+    includes:
+      in_header: header.html
+      after_body: footer.html
 ---
 
 ```{r setup, include=FALSE}
@@ -12,22 +15,18 @@ knitr::opts_chunk$set(echo = FALSE,
 library(htmltools)
 ```
 
-<html>
-  <head>
-     <link rel="shortcut icon" type = "image/png" href="./www/images/favicon.png">
-  </head>
-  <body>
-    <header>
-    </header>
-    <footer>
-    </footer>
-  </body>
-</html>
-
 # Report Title {.tabset}
 
-## Header 2
+## Header 2 Tab 1
 
 ### Header 3
 
 #### Header 4
+
+## Header 2 Tab 2 
+
+````{=html}
+```{r}
+
+```
+````
