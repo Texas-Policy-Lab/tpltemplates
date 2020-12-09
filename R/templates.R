@@ -1,4 +1,5 @@
 #' @title Create directory structure
+#' @export
 create_dir_str <- function(pth, dirs) {
 
   pths <- file.path(pth, dirs)
@@ -11,6 +12,7 @@ create_dir_str <- function(pth, dirs) {
 }
 
 #' @title List files
+#' @export
 list_files <- function(template_dir,
                        dirs, 
                        ignore = "R/templates.R") {
@@ -62,7 +64,7 @@ create_report <- function(pth,
                     dirs = dirs)
 
   lapply(fls, function(fl, pth) {
-    
+
     file.copy(from = fl,
               to = file.path(pth, 
                              gsub(paste(template_dir, "www", sep = "|"), ".", fl))
