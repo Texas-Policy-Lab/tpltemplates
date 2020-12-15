@@ -1,7 +1,14 @@
 ---
+title: Report title
 output: 
   html_document:
-    css: ['./css/_normalize.css', './css/_styles.css', './css/main.css', './css/tabs.css', './css/footer.css', './css/report_styles.css']
+    css: 
+      - './css/_normalize.css'
+      - './css/_styles.css'
+      - './css/main.css'
+      - './css/tabs.css'
+      - './css/footer.css'
+      - './css/report_styles.css'
     includes:
       in_header: header.html
 ---
@@ -9,23 +16,20 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
-                      message = FALSE,
-                      fig.align="center")
+                      message = FALSE)
 
 library(htmltools)
 ```
 
-# Report Title {.tabset}
+## Header 2 {.tabset}
 
-## Header 2 Tab 1
-
-### Header 3
+### Tab 1 - Header 3
 
 #### Header 4
 
-## Header 2 Tab 2 
+### Tab 2 - Header 3
 
-</div>
+## {.unlisted .unnumbered}
 
 ```{r}
 source("./R/footer.R", local = knitr::knit_global())
