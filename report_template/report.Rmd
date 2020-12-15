@@ -19,6 +19,8 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 
 library(htmltools)
+
+sapply(list.files("R", full.names = TRUE, recursive = TRUE), source, .GlobalEnv)
 ```
 
 ## Header 2 {.tabset}
@@ -32,6 +34,5 @@ library(htmltools)
 ## {.unlisted .unnumbered}
 
 ```{r}
-source("./R/footer.R", local = knitr::knit_global())
 footer()
 ```
