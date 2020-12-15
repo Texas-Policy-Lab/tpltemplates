@@ -23,14 +23,14 @@ h2 {
   margin: 10px;
 }
 
-h3 {
+h4 {
   font-weight: bold;
   font-size: 16px;
   margin: 0 0 10px 20px;
   text-align: center;
 }
 
-h4 {
+h5 {
   font-size: 14px;
   margin: 0 0 10px 20px;
   text-decoration: underline;
@@ -120,6 +120,3 @@ table.dataTable.display tbody tr.odd {
 .dataTables_wrapper .dataTables_paginate {
   color: var(--grey-60-darker);
 }
-
-
-
