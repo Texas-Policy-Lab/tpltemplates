@@ -1,12 +1,12 @@
 footer {
-    position: fixed;
-    border-top: 1px solid rgba(151,151,151,.51);
-    display: block;
-    background-color: var(--white);
-    max-height: 100px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  border-top: 1px solid rgba(151,151,151,.51);
+  display: block;
+  background-color: var(--white);
+  max-height: 100px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer .star {
@@ -16,19 +16,9 @@ footer .star {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   width: 4.16667%;
-  min-width: 60px;
+  min-width: 40px;
   height: 40px;
   background-color: var(--white);
-}
-
-footer .star object {
-  width: 50%;
-  min-width: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 a.btn {
@@ -58,52 +48,6 @@ b, strong {
   color: var(--main-tpl-blue);
 }
 
-footer .footer_logo {
-   max-width: 33%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 6%;
-  padding-right: 4%;
-  left: 50%;
-}
-
-footer .footer_logo-tpl {
-  max-width: 150px;
-  min-width: 150px;
-  float: left;
-  margin-top: 5px;
-  padding-left: 0;
-}
-
-footer .footer_copyright {
-  max-width: 33%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 4%;
-  padding-right: 4%;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-}
-
-footer .footer_contact {
-  max-width: 33%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 4%;
-  padding-right: 4%;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  right: 50%;
-}
-
 footer .first-row .g-row {
   width: 100%;
 }
@@ -127,6 +71,25 @@ footer .first-row {
   display: flex;  
   flex-wrap: wrap;
   padding: 25px 0;
+}
+
+footer .footer_logo,
+footer .footer_copyright,
+footer .footer_contact {
+  max-width: 33%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.footer_logo svg {
+  max-width: 200px;
 }
 
 footer .footer_contact p {
