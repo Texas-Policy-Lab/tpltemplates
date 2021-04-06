@@ -68,3 +68,12 @@ h1, h2, h4, h5, h6, span {
 .box {
   border-color: var(--main-tpl-blue);
 }
+
+.text-box {
+  padding: 12px;
+  border: 1px solid var(--grey-20-darker);
+  border-radius: 5px;
+  background: #f7f7f7;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
