@@ -71,3 +71,13 @@ create_report <- function(pth,
     )
   }, pth = pth)
 }
+
+#' @title Text box
+#' @param l list. List of HTML elements to include
+text_box <- function(l) {
+  shinydashboard::box(
+    class = "text-box",
+    width = 12,
+    icon("info-circle"),
+    l)
+}
